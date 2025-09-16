@@ -1,7 +1,6 @@
 🌐 My Portfolio
 
-Welcome to my personal portfolio!
-This project showcases my skills, projects, and achievements using a simple and clean HTML-based design.
+Welcome to my personal portfolio! This project showcases my skills, projects, and achievements using a simple and clean HTML-based design.
 
 📌 About
 
@@ -9,7 +8,7 @@ This portfolio is built using HTML, CSS, and JavaScript to give a quick overview
 
 🔗 Live Demo
 
-View Portfolio
+https://prachiraddii.github.io/portfolio/
 
 📁 Features
 
@@ -27,21 +26,10 @@ CSS3
 
 JavaScript
 
-🚀 How to Run Locally
-
-Clone this repository
-
-git clone https://github.com/your-username/portfolio.git
-
-
-Open index.html in your browser
-
 📬 Contact
 
-Name: Your Name
+Name: Prachi Raddi
 
-Email: your-email@example.com
+Email: prachiraddiwork@gmail.com
 
-LinkedIn: Your LinkedIn
-
-GitHub: Your GitHub
+LinkedIn: https://www.linkedin.com/in/prachiraddi/
