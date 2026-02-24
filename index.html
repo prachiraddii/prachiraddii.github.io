@@ -1,78 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prachi Raddi | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Prachi Pandurang Raddi | Data Science Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+:root {
+    --dark: #414A37;
+    --brown: #99744a;
+    --light: #dbc2ac;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--light);
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 8%;
+    position: fixed;
+    width: 100%;
+    background: rgba(65,74,55,0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--light);
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: var(--brown);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 130px 8% 80px;
+    min-height: 100vh;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: var(--brown);
+}
+
+.hero p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: var(--brown);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #7f5e3e;
+}
+
+.hero img {
+    width: 380px;
+    border-radius: 20px;
+    border: 4px solid var(--brown);
+}
+
+section {
+    padding: 80px 8%;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: var(--brown);
+}
+
+.card {
+    background: #4c5643;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #3a4233;
+}
+
+@media(max-width: 900px){
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero img {
+        margin-top: 40px;
+        width: 280px;
+    }
+}
+</style>
 </head>
+
 <body>
-    <!-- Header / About Me -->
-    <header>
-        <div class="container">
-            <h1>Hi, I'm Prachi Raddi </h1>
-            <p>2nd-year B.Tech Computer Science student at VIT Vellore who's passionate about coding, data science, and building projects that solve real-world problems.</p>
-        </div>
-    </header>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>Python, C++, Java</li>
-                <li>HTML, CSS, JavaScript</li>
-                <li>Git, GitHub, VSCode</li>
-                <li>NumPy, Pandas, Matplotlib</li>
-            </ul>
-        </div>
-    </section>
+<nav>
+    <div><strong>Prachi Pandurang Raddi</strong></div>
+    <div>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-text" data-aos="fade-right">
+        <h1>Hi, I'm <span>Prachi Raddi</span></h1>
+        <p>
+        2nd year B.Tech Computer Science (Data Science) student at VIT Vellore (2028).
+        I build machine learning systems, perform real-world data analysis,
+        and develop scalable Python-based applications.
+        Strong foundation in DSA, SQL, and algorithmic thinking.
+        </p>
 
-            <div class="project-card">
-                <img src="images/expense_tracker.png.png" alt="Expense Tracker Screenshot">
-                <h3>Expense Tracker</h3>
-                <p>Python-based app to track daily expenses. Features: Add/View/Edit/Delete expenses, persistent storage using CSV.</p>
-                <a href="https://github.com/prachiraddii/Expense-Tracker" target="_blank">View on GitHub</a>
-            </div>
+        <a href="https://github.com/prachiraddii" class="btn" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/prachiraddi/" class="btn" target="_blank">LinkedIn</a>
+    </div>
 
-            <div class="project-card">
-                
-                <h3>Stock Market Predictor</h3>
-                <p>Predict the stock prices based on the history of that particular stock.</p>
-                <a href="https://github.com/prachiraddii/stock-price-analysis" target="_blank">View on GitHub</a>
-            </div>
-            <div class="project-card">
-                <h3>My Own AI</h3>
-                <p>Created a personal AI assistant capable of answering queries, performing tasks, and automating workflows using Python and APIs.</p>
-                <a href="https://github.com/prachiraddi/AIGENDA" target="_blank">View on GitHub</a>
-            </div>
-        </div>
-    </section>
+    <img src="prachi.jpeg" alt="Prachi Pandurang Raddi" data-aos="fade-left" data-aos-delay="200">
+</div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <ul>
-                <li>Email: prachiraddiwork@gmail.com</li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/prachiraddi/" target="_blank">Visit Profile</a></li>
-                <li>GitHub: <a href="https://github.com/prachiraddii" target="_blank">View Profile</a></li>
-            </ul>
-        </div>
-    </section>
+<!-- SKILLS -->
+<section id="skills">
+<h2 data-aos="fade-up">Technical Skills</h2>
+<div class="grid">
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Prachi Raddi | All Rights Reserved</p>
-    </footer>
+<div class="card" data-aos="fade-up" data-aos-delay="100">
+<strong>Programming</strong><br><br>
+Python, Java, C, C++
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="200">
+<strong>Data Science & ML</strong><br><br>
+NumPy, Pandas, Matplotlib, Scikit-learn, Machine Learning Fundamentals
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="300">
+<strong>Core CS</strong><br><br>
+Data Structures & Algorithms<br>
+Design & Analysis of Algorithms
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="400">
+<strong>Database</strong><br><br>
+SQL (Intermediate)
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="500">
+<strong>Development</strong><br><br>
+HTML, CSS, JavaScript<br>
+Android Development (Android Studio, Activities, Intents)
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="600">
+<strong>Additional Knowledge</strong><br><br>
+Prompt Engineering<br>
+Product Management (Beginner)
+</div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2 data-aos="fade-up">Projects</h2>
+
+<div class="card" data-aos="fade-up" data-aos-delay="100">
+<strong>Stock Market Prediction System</strong><br><br>
+Built ML regression model using 5+ years of stock data.
+Performed EDA, feature engineering, and evaluation using Python & Scikit-learn.
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="200">
+<strong>Diabetes Dataset EDA</strong><br><br>
+Analyzed 700+ records. Visualized correlations and experimented with ML models.
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="300">
+<strong>AI Assistant</strong><br><br>
+Developed Python-based AI assistant integrating APIs and prompt-driven workflows.
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="400">
+<strong>Expense Tracker</strong><br><br>
+Built CRUD-based Python app with persistent CSV storage.
+</div>
+
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+<h2 data-aos="fade-up">Certifications</h2>
+
+<div class="card" data-aos="fade-up" data-aos-delay="100">
+Machine Learning Basics
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="200">
+SQL Intermediate
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="300">
+Prompt Engineering
+</div>
+
+<div class="card" data-aos="fade-up" data-aos-delay="400">
+Product Management (Beginner)
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2 data-aos="fade-up">Contact</h2>
+
+<div class="card" data-aos="fade-up" data-aos-delay="150">
+📧 prachiraddiwork@gmail.com<br><br>
+🔗 <a href="https://github.com/prachiraddii" target="_blank" style="color: var(--brown)">GitHub</a><br>
+🔗 <a href="https://www.linkedin.com/in/prachiraddi/" target="_blank" style="color: var(--brown)">LinkedIn</a>
+</div>
+
+</section>
+
+<footer>
+© 2026 Prachi Pandurang Raddi
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+    duration: 1000,
+    once: true
+});
+</script>
+
 </body>
 </html>
-
-
-
